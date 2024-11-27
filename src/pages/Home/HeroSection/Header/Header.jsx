@@ -35,18 +35,16 @@ export default function Header() {
         }
 
         .text-shadow {
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+          text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.8);
         }
 
         .leaves-shadow {
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         }
 
-        .gradient-text {
-          background: linear-gradient(90deg, rgba(255,140,0,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          text-stroke: 1px black;
+        .gradient-background {
+          background: linear-gradient(90deg,  rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+          
         }
       `}</style>
       
@@ -72,7 +70,7 @@ export default function Header() {
           </h1>
 
           {/* Service Times */}
-          <div className="flex justify-start mt-10 service-times space-x-6 relative z-20 whitespace-nowrap">
+          <div className="flex justify-start mt-20 service-times space-x-8 relative z-20 whitespace-nowrap">
             {[
               "Sunday Worship Service 11:00 AM",
               "Sunday Night Service: 6:00 PM",
@@ -80,7 +78,7 @@ export default function Header() {
               "Sunday School: 10:00 AM",
             ].map((text, index) => (
               <div key={index} className="flex items-center">
-                <span className="inline-block w-auto px-6 py-3 text-[1.6rem] font-semibold gradient-text bg-clip-text">
+                <span className="inline-block w-auto px-6 py-3 text-[1.6rem] font-semibold text-[#191616] gradient-background rounded-lg shadow-md">
                   {text}
                 </span>
               </div>

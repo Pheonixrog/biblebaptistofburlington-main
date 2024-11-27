@@ -47,7 +47,7 @@ export default function Nav() {
               <li key={link.path} className="lg:py-8">
                 <Link
                   to={link.path}
-                  className={`font-['Mulish'] text-[2rem] no-underline ${
+                  className={`font-['Mulish'] text-[2rem] no-underline text-black ${
                     pathname === link.path ? "text-white" : "text-[#D3E6E9]"
                   } lg:text-black lg:text-[1.7rem] lg:block lg:py-8`}
                 >
