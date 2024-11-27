@@ -3,12 +3,18 @@ import { useEffect } from 'react';
 export default function Header() {
   useEffect(() => {
     const serviceTimes = document.querySelector('.service-times');
-    serviceTimes.classList.add('animate-continuousSlide');
+    serviceTimes.classList.add('animate-slideInCenter');
+    
+    const poster1 = document.querySelector('.poster1');
+    const poster2 = document.querySelector('.poster2');
+    
+    poster1.classList.add('animate-slideInLeft');
+    poster2.classList.add('animate-slideInRight');
   }, []);
 
   return (
     <header
-      className="h-[67rem] bg-no-repeat bg-cover bg-center relative overflow-hidden lg:h-[80rem] sm:h-[67rem]"
+      className="h-[70rem] bg-no-repeat bg-cover bg-center relative overflow-hidden lg:h-[80rem] sm:h-[67rem]"
       style={{
         backgroundImage: `
                linear-gradient(
@@ -21,17 +27,51 @@ export default function Header() {
       }}
     >
       <style jsx>{`
-        @keyframes continuousSlide {
+        @keyframes slideInCenter {
           0% {
             transform: translateX(-100%);
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
           }
           100% {
-            transform: translateX(100%);
+            transform: translateX(0);
+            opacity: 1;
           }
         }
 
-        .animate-continuousSlide {
-          animation: continuousSlide 10s linear infinite;
+        .animate-slideInCenter {
+          animation: slideInCenter 2s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .word {
+          display: inline-block;
+          opacity: 0;
+          animation: fadeIn 1s forwards;
+        }
+
+        .word-1 {
+          animation-delay: 0.5s;
+        }
+
+        .word-2 {
+          animation-delay: 1s;
+        }
+
+        .word-3 {
+          animation-delay: 1.5s;
         }
 
         .text-shadow {
@@ -43,16 +83,45 @@ export default function Header() {
         }
 
         .gradient-background {
-          background: linear-gradient(90deg,  rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-          
+          background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0)100%);
+        }
+
+        @keyframes slideInLeft {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        .animate-slideInLeft {
+          animation: slideInLeft 1.5s ease-out forwards;
+        }
+
+        @keyframes slideInRight {
+          0% {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        .animate-slideInRight {
+          animation: slideInRight 1.5s ease-out forwards;
         }
       `}</style>
-      
-      <div className="absolute inset-0 flex items-center justify-between pointer-events-none">
-        <img src="/pastor.png" alt="Pastor" className="w-1/4 h-auto object-contain transform -translate-x-full transition-transform duration-500" />
-        <img src="/bible.png" alt="Bible" className="w-1/4 h-auto object-contain transform translate-x-full transition-transform duration-500" />
+
+      <div className="pt-40 flex justify-center items-center absolute inset-0 z-20 ">
+        <img src="/poster1.png" alt="Pastor 1" className="poster1 w-1/6 h-auto object-contain transform transition-transform duration-500 mr-[55%]" />
+        <img src="/poster2.png" alt="Pastor 2" className="poster2 w-1/5 h-auto object-contain transform transition-transform duration-500" />
       </div>
-      
+
       {/* Leaves Overlay */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         <img
@@ -62,15 +131,17 @@ export default function Header() {
         />
       </div>
 
-      <div className="max-w-[130rem] mx-auto px-8 relative overflow-hidden">
-        <div className="pt-60 relative">
+      <div className="max-w-[130rem] mx-auto px-10 relative overflow-hidden ">
+        <div className="pt-40 relative">
           {/* Title */}
-          <h1 className="font-['Mulish'] font-black text-[15.2rem] text-center leading-[120%] text-white lg:text-[7.2rem] lg:w-[33.5rem] lg:mx-auto relative z-20 text-shadow">
-            BIBLE BAPTIST CHURCH
+          <h1 className=" font-['Mulish'] font-black text-[15.2rem] text-center leading-[120%] text-white lg:text-[7.2rem] lg:w-[33.5rem] lg:mx-auto relative z-20 text-shadow">
+            <span className="word word-1">BIBLE</span>{" "}
+            <span className="word word-2">BAPTIST</span>{" "}
+            <span className="word word-3">CHURCH</span>
           </h1>
 
           {/* Service Times */}
-          <div className="flex justify-start mt-20 service-times space-x-8 relative z-20 whitespace-nowrap">
+          <div className="pt-20 flex justify-center mt-20 service-times space-x-8 relative z-20">
             {[
               "Sunday Worship Service 11:00 AM",
               "Sunday Night Service: 6:00 PM",
