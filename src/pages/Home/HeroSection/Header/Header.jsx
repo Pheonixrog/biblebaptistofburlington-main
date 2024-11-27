@@ -118,8 +118,8 @@ export default function Header() {
       `}</style>
 
       <div className="pt-40 flex justify-center items-center absolute inset-0 z-20 ">
-        <img src="/poster1.png" alt="Pastor 1" className="poster1 w-1/6 h-auto object-contain transform transition-transform duration-500 mr-[55%]" />
-        <img src="/poster2.png" alt="Pastor 2" className="poster2 w-1/5 h-auto object-contain transform transition-transform duration-500" />
+        <img src="/poster2.png" alt="Pastor 1" className="poster1 w-1/4 h-auto object-contain transform transition-transform duration-500 mr-[52%]" />
+        <img src="/poster1.png" alt="Pastor 2" className="poster2 w-1/6 h-auto object-contain transform transition-transform duration-500" />
       </div>
 
       {/* Leaves Overlay */}
