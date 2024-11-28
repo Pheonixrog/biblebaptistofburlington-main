@@ -18,7 +18,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="absolute w-full z-10">
+    <nav className="absolute w-full z-40">
       <div className="max-w-[130rem] mx-auto px-8">
         <div className="flex justify-between py-12 items-center lg:px-8">
           {/* Logo */}
