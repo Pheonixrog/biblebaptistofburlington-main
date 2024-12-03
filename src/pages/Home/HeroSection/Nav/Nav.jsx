@@ -44,7 +44,7 @@ export default function Nav() {
 
             {/* Nav Links */}
             {navLinks.map((link) => (
-              <li key={link.path} className="lg:py-8">
+              <li key={link.path} className={`${isOpen ? "" : "hidden"}`}>
                 <Link
                   to={link.path}
                   className={`font-['Mulish'] text-[2rem] no-underline text-black ${

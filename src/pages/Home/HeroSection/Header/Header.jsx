@@ -1,15 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export default function Header() {
   useEffect(() => {
-    const serviceTimes = document.querySelector('.service-times');
-    serviceTimes.classList.add('animate-slideInCenter');
-    
-    const poster1 = document.querySelector('.poster1');
-    const poster2 = document.querySelector('.poster2');
-    
-    poster1.classList.add('animate-slideInLeft');
-    poster2.classList.add('animate-slideInRight');
+    const serviceTimes = document.querySelector(".service-times");
+    serviceTimes.classList.add("animate-slideInCenter");
+
+    const poster1 = document.querySelector(".poster1");
+    const poster2 = document.querySelector(".poster2");
+
+    poster1.classList.add("animate-slideInLeft");
+    poster2.classList.add("animate-slideInRight");
   }, []);
 
   return (
@@ -83,7 +83,11 @@ export default function Header() {
         }
 
         .gradient-background {
-          background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0)100%);
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0) 100%
+          );
         }
 
         @keyframes slideInLeft {
@@ -118,8 +122,16 @@ export default function Header() {
       `}</style>
 
       <div className="pt-40 flex justify-center items-center absolute inset-0 z-20 ">
-        <img src="/poster2.png" alt="Pastor 1" className="poster1 w-1/4 h-auto object-contain transform transition-transform duration-500 mr-[52%]" />
-        <img src="/poster1.png" alt="Pastor 2" className="poster2 w-1/6 h-auto object-contain transform transition-transform duration-500" />
+        <img
+          src="/poster2.png"
+          alt="Pastor 1"
+          className="poster1 w-1/4 h-auto object-contain transform transition-transform duration-500 mr-[52%]"
+        />
+        <img
+          src="/poster1.png"
+          alt="Pastor 2"
+          className="poster2 w-1/6 h-auto object-contain transform transition-transform duration-500"
+        />
       </div>
 
       {/* Leaves Overlay */}
@@ -141,7 +153,7 @@ export default function Header() {
           </h1>
 
           {/* Service Times */}
-          <div className="pt-20 flex justify-center mt-20 service-times space-x-8 relative z-20">
+          <div className="pt-20 flex sm:flex-col sm:items-center sm:gap-4 justify-center mt-20 service-times space-x-8 relative z-20">
             {[
               "Sunday Worship Service 11:00 AM",
               "Sunday Night Service: 6:00 PM",

@@ -7,9 +7,11 @@ export default function Header({ title }) {
       className="bg-gradient-to-tr from-[#733d1a] via-[#a65d2e] via-[#bf702f] to-[#8b4513]
                        bg-cover bg-center h-[68rem] md:h-[50rem]"
     >
-      <div className="max-w-[130rem] mx-auto px-8">
-        <div className="pt-60 relative h-[68rem] md:h-[50rem]">
-          <Title title={title} />
+      <div className="max-w-[130rem] mx-auto px-8 lg:px-0">
+        <div className="pt-60 relative h-[68rem] md:h-[50rem] overflow-clip">
+          <div className="lg:px-8">
+            <Title title={title} />
+          </div>
           <img
             src={churchImage}
             alt="Church Building"

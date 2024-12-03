@@ -16,13 +16,12 @@ export default function Team() {
       <div className="max-w-[130rem] mx-auto px-8">
         <div
           className="flex items-center justify-between gap-8
-                       [1230px]:grid [1230px]:grid-cols-2 [1230px]:place-items-center [1230px]:gap-8
-                       md:flex md:flex-col md:gap-8 md:px-8"
+                       lg:grid lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] lg:place-items-center lg:gap-8"
         >
           <div
             className="bg-white text-black w-[29.1rem] h-[35.4rem] border border-[#DCDCDC] text-center
                         flex flex-col gap-4
-                        [1230px]:w-full
+                        lg:w-full
                         md:w-full"
           >
             <img
@@ -37,7 +36,7 @@ export default function Team() {
           <div
             className="bg-white text-black w-[29.1rem] h-[35.4rem] border border-[#DCDCDC] text-center
                         flex flex-col gap-4
-                        [1230px]:w-full
+                        lg:w-full
                         md:w-full"
           >
             <img
@@ -52,7 +51,7 @@ export default function Team() {
           <div
             className="bg-white text-black w-[29.1rem] h-[35.4rem] border border-[#DCDCDC] text-center
                         flex flex-col gap-4
-                        [1230px]:w-full
+                        lg:w-full
                         md:w-full"
           >
             <img
@@ -71,7 +70,7 @@ export default function Team() {
           <div
             className="bg-white text-black w-[29.1rem] h-[35.4rem] border border-[#DCDCDC] text-center
                         flex flex-col gap-4
-                        [1230px]:w-full
+                        lg:w-full
                         md:w-full"
           >
             <img

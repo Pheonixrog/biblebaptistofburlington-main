@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#F8F8F8] py-40">
       <div className="mx-auto max-w-[130rem] px-8">
-        <div className="flex justify-between gap-8 lg:flex-col lg:w-[40rem] lg:mx-auto sm:text-center sm:gap-16">
+        <div className="flex justify-between gap-8 lg:flex-col  sm:w-full lg:mx-auto lg:w-fit sm:text-center sm:gap-16">
           {/* Column 1 - Logo & Description */}
           <div className="flex flex-col gap-10 w-[29.1rem] sm:w-full sm:px-8">
             <h3 className="text-[2.4rem] flex items-center gap-4 sm:justify-center">
@@ -35,7 +35,7 @@ export default function Footer() {
                       {item}
                     </Link>
                   </li>
-                ),
+                )
               )}
             </ul>
           </div>

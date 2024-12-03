@@ -35,7 +35,7 @@ export default function LiveStreamService() {
           </h2>
 
           {/* Service Cards */}
-          <div className="flex justify-between items-start gap-8">
+          <div className="flex sm:flex-col justify-between items-start gap-8">
             {services.map((service, index) => (
               <div
                 key={index}

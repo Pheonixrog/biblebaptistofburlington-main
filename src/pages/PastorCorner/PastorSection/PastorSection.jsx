@@ -84,19 +84,19 @@ export default function PastorCorner() {
     <section className="my-40">
       <div className="mx-auto max-w-[130rem] px-8">
         <div
-          className="mx-auto w-[88.8rem] text-center flex flex-col gap-11
+          className="mx-auto w-[88.8rem] lg:w-[90%] text-center flex flex-col gap-11
                         xl:w-full
                         md:w-full md:px-8"
         >
           <h2
             className="text-[5.4rem] font-black leading-[110%]
-                         md:text-[3.6rem]"
+                         lg:text-[3.6rem]"
           >
             Where are you going to spend eternity Heaven or Hell?
           </h2>
 
           <div
-            className="mx-auto w-[64.4rem] leading-[180%] text-[1.8rem]
+            className="mx-auto w-[64.4rem] lg:w-[90%] leading-[180%] text-[1.8rem]
                           xl:w-full
                           md:w-full md:px-8"
           >

@@ -100,7 +100,7 @@ const data = [
 export default function Table() {
   return (
     <div className="w-full flex justify-center">
-      <table className="mx-auto w-[85%] text-left border border-gray-200 inline-table lg:hidden">
+      <table className="mx-auto w-[85%] text-left border border-gray-200 inline-table">
         <thead>
           <tr>
             <td

@@ -4,11 +4,11 @@ import ladiesMinistryIcon from "../../../assets/ladiesMinistryIcon.webp";
 
 export default function MinistriesCard() {
   return (
-    <section className="relative -top-40 lg:top-0 lg:my-20 md:top-20">
+    <section className="relative -top-40 lg:my-20 md:top-20">
       <div className="max-w-[130rem] mx-auto px-8">
-        <div className="flex items-center justify-between gap-8 md:flex-col md:px-8">
+        <div className="flex items-center justify-between gap-8 lg:grid lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
           <div
-            className="bg-white text-black w-[39.6rem] h-[18.2rem] border border-[#DCDCDC] text-center
+            className="bg-white text-black lg:w-auto w-[39.6rem] h-[18.2rem] border border-[#DCDCDC] text-center
                                   flex flex-col items-center justify-center gap-4
                                   md:w-full md:h-[33.5rem]"
           >
@@ -23,7 +23,7 @@ export default function MinistriesCard() {
           </div>
 
           <div
-            className="bg-white text-black w-[39.6rem] h-[18.2rem] border border-[#DCDCDC] text-center
+            className="bg-white text-black w-[39.6rem] lg:w-auto h-[18.2rem] border border-[#DCDCDC] text-center
                                   flex flex-col items-center justify-center gap-4
                                   md:w-full md:h-[33.5rem]"
           >
@@ -38,7 +38,7 @@ export default function MinistriesCard() {
           </div>
 
           <div
-            className="bg-white text-black w-[39.6rem] h-[18.2rem] border border-[#DCDCDC] text-center
+            className="bg-white text-black w-[39.6rem] lg:w-auto h-[18.2rem] border border-[#DCDCDC] text-center
                                   flex flex-col items-center justify-center gap-4
                                   md:w-full md:h-[33.5rem]"
           >

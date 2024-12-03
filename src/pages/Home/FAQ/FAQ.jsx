@@ -43,11 +43,11 @@ export default function FAQ() {
       <div className="mx-auto max-w-[130rem]">
         <div>
           {/* Heading Section */}
-          <div className="text-center mx-auto w-[76rem] sm:w-full sm:px-8">
+          <div className="text-center mx-auto sm:w-full sm:px-8">
             <h2 className="text-[5.4rem] font-black leading-[110%] sm:text-[3.2rem]">
               Frequently Asked Questions
             </h2>
-            <p className="text-[#605757] text-[1.8rem] font-semibold leading-relaxed w-[64.4rem] mx-auto mt-6 sm:text-[1.2rem] sm:w-[33.6rem]">
+            <p className="text-[#605757] text-[1.8rem] font-semibold leading-relaxed w-[64.4rem] mx-auto mt-6 sm:text-[1.2rem] sm:w-[90%]">
               Most people have similar questions so we decided to answer them
               afterwards for anyone who&apos;s looking fo similar answers.
             </p>
