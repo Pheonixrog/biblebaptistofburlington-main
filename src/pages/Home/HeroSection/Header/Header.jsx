@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import styles from "./header.module.css";
 
 export default function Header() {
   useEffect(() => {
@@ -143,10 +144,12 @@ export default function Header() {
         />
       </div>
 
-      <div className="max-w-[130rem] mx-auto px-10 relative overflow-hidden ">
+      <div className="max-w-[130rem] mx-auto px-10 sm:px-0 relative overflow-hidden ">
         <div className="pt-40 relative">
           {/* Title */}
-          <h1 className=" font-['Mulish'] font-black text-[15.2rem] text-center leading-[120%] text-white lg:text-[7.2rem] lg:w-[33.5rem] lg:mx-auto relative z-20 text-shadow">
+          <h1
+            className={`font-black text-center leading-[120%] text-white lg:w-[33.5rem] lg:mx-auto relative z-20 text-shadow ${styles.hero_title}`}
+          >
             <span className="word word-1">BIBLE</span>{" "}
             <span className="word word-2">BAPTIST</span>{" "}
             <span className="word word-3">CHURCH</span>

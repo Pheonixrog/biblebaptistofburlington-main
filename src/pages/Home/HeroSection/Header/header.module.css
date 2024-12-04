@@ -1,0 +1,15 @@
+.hero_title {
+  font-size: 15.2rem;
+}
+
+@media (480px <= width <= 1280px) {
+  .hero_title {
+    font-size: 7.2rem;
+  }
+}
+
+@media (width < 480px) {
+  .hero_title {
+    font-size: 6.2rem;
+  }
+}
